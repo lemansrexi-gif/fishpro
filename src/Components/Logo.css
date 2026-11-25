@@ -1,0 +1,18 @@
+.logo {
+  width: clamp(120px, 42vw, 180px);
+  height: auto;
+}
+.logo__body {
+  fill: var(--white);
+}
+.logo__accent {
+  fill: var(--sky);
+}
+.logo__gill {
+  fill: none;
+  stroke: var(--sky);
+  stroke-width: 3.2;
+}
+.logo__eye {
+  fill: var(--navy);
+}

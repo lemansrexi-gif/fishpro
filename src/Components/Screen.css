@@ -1,0 +1,29 @@
+.screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+}
+
+.screen--dark {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.screen__inner {
+  flex: 1;
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-lg);
+  padding-left: max(var(--space-lg), env(safe-area-inset-left));
+  padding-right: max(var(--space-lg), env(safe-area-inset-right));
+  padding-bottom: max(var(--space-lg), env(safe-area-inset-bottom));
+}
+
+.screen--dark .screen__inner {
+  padding-top: max(var(--space-lg), env(safe-area-inset-top));
+}

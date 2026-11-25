@@ -1,0 +1,35 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  padding: 0 var(--space-lg);
+  border: 0;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--fs-body);
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn:active {
+  opacity: 0.85;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn--primary {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.btn--light {
+  background: var(--sky);
+  color: var(--navy);
+}

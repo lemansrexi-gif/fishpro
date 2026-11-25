@@ -1,0 +1,25 @@
+.status-banner {
+  margin-bottom: var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px var(--space-md);
+  font-weight: 600;
+}
+
+.status-banner--ok,
+.status-banner--wait {
+  background: var(--sky-pale);
+  color: var(--navy);
+}
+
+.status-banner--warn {
+  background: var(--warn-pale);
+  border-color: var(--warn);
+  color: var(--warn);
+}
+
+.status-banner--error {
+  background: var(--danger-pale);
+  border-color: var(--danger);
+  color: var(--danger);
+}

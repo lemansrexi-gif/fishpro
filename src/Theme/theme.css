@@ -1,0 +1,32 @@
+/* Única fuente de verdad del diseño. Mismo azul oscuro que THEME en vite.config.js y theme-color en index.html. */
+:root {
+  --navy: #0a2342; /* azul oscuro (color principal) */
+  --blue: #1d5a9e;
+  --sky: #7cc4f0; /* azul claro */
+  --sky-pale: #eaf5fc;
+  --white: #ffffff;
+  --muted: #5a7088;
+  --border: #d3e5f3;
+
+  /* Solo para estados de la pantalla de estado */
+  --warn: #8a5a00;
+  --warn-pale: #fff4d6;
+  --danger: #b3261e;
+  --danger-pale: #fdecea;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --radius-sm: 8px; /* bordes ligeramente redondeados */
+  --radius-md: 12px;
+
+  --fs-small: clamp(13px, 3.6vw, 14px);
+  --fs-body: clamp(15px, 4.2vw, 17px);
+  --fs-title: clamp(17px, 5vw, 20px);
+  --fs-display: clamp(30px, 9vw, 40px);
+
+  --content-max: 560px; /* en pantallas grandes el contenido no se estira */
+}

@@ -1,0 +1,21 @@
+.status__heading {
+  margin: var(--space-md) 0 var(--space-sm);
+  font-size: var(--fs-title);
+  font-weight: 700;
+}
+
+.status__intro,
+.status__note {
+  margin-bottom: var(--space-md);
+  color: var(--muted);
+}
+
+.status__note {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  font-size: var(--fs-small);
+}
+
+.status__back {
+  margin-top: var(--space-md);
+}
