@@ -22,10 +22,12 @@
 
   --radius-sm: 8px; /* bordes ligeramente redondeados */
   --radius-md: 12px;
+  --radius-lg: 16px;
 
   --fs-small: clamp(13px, 3.6vw, 14px);
   --fs-body: clamp(15px, 4.2vw, 17px);
   --fs-title: clamp(17px, 5vw, 20px);
+  --fs-heading: clamp(24px, 7vw, 30px);
   --fs-display: clamp(30px, 9vw, 40px);
 
   --content-max: 560px; /* en pantallas grandes el contenido no se estira */

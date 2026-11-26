@@ -16,3 +16,8 @@
 .logo__eye {
   fill: var(--navy);
 }
+
+.logo--small {
+  width: 48px;
+  flex-shrink: 0;
+}

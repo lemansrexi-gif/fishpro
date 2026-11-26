@@ -2,4 +2,8 @@
 export const ROUTES = {
   HOME: '#inicio',
   STATUS: '#estado',
+  IDENTIFY: '#identificar',
+  ASSISTANT: '#asistente',
+  LIBRARY: '#biblioteca',
+  CAPTURES: '#capturas',
 };

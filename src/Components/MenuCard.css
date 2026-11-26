@@ -1,0 +1,63 @@
+.menu-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  min-height: 96px;
+  padding: var(--space-md);
+  background: var(--white);
+  color: var(--navy);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+  transition: transform 0.12s, background 0.12s;
+}
+
+.menu-card:active {
+  transform: scale(0.98);
+  background: var(--sky-pale);
+}
+
+.menu-card__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--sky);
+  color: var(--navy);
+}
+
+.menu-card__glyph {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-card__text {
+  flex: 1;
+  min-width: 0; /* evita que el texto largo desborde la tarjeta */
+}
+
+.menu-card__title {
+  display: block;
+  font-size: var(--fs-title);
+  font-weight: 800;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.menu-card__description {
+  display: block;
+  margin-top: var(--space-xs);
+  color: var(--muted);
+  font-size: var(--fs-small);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.menu-card__chevron {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  color: var(--blue);
+}

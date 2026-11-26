@@ -1,22 +1,33 @@
-import Button from '../Components/Button.jsx';
 import Logo from '../Components/Logo.jsx';
+import MenuCard from '../Components/MenuCard.jsx';
 import Screen from '../Components/Screen.jsx';
 import { ROUTES } from '../Navigation/routes.js';
+import { MENU_SECTIONS } from '../Navigation/sections.js';
 import './HomeScreen.css';
 
-// Pantalla temporal de bienvenida. En la Fase 2 será reemplazada por el menú principal.
+// Menú principal: aparece al abrir la app.
 export default function HomeScreen() {
   return (
     <Screen dark>
-      <div className="home__center">
-        <Logo />
-        <h1 className="home__title">FISHPRO</h1>
-        <p className="home__tagline">Identifica, consulta y registra tus capturas.</p>
+      <header className="home__brand">
+        <Logo small />
+        <span className="home__brand-name">FISHPRO</span>
+      </header>
+
+      <div className="home__welcome">
+        <h1 className="home__title">Bienvenido a FISHPRO</h1>
+        <p className="home__tagline">Tu compañero inteligente de pesca</p>
       </div>
-      <Button variant="light" href={ROUTES.STATUS}>
+
+      <ul className="home__menu">
+        {MENU_SECTIONS.map((section) => (
+          <MenuCard key={section.route} {...section} />
+        ))}
+      </ul>
+
+      <a className="home__status" href={ROUTES.STATUS}>
         Ver estado del proyecto
-      </Button>
-      <p className="home__phase">Fase 1: base del proyecto</p>
+      </a>
     </Screen>
   );
 }
